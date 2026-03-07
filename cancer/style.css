@@ -131,7 +131,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      gap: 2rem;
+      gap: 20px;
       padding-top: 80px;
     }
     .mobile-menu.open { display: flex; }
@@ -164,7 +164,7 @@
       align-items: center;
       overflow: hidden;
       background: var(--navy);
-      
+     
 
     }
    
@@ -1233,7 +1233,8 @@
       .hamburger { display: flex; }
       .hero-content { grid-template-columns: 1fr; }
       .hero-visual { display: none; }
-      .hero-stats { gap: 1rem; }
+      .hero-stats { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+      #hero { overflow: visible; }
       .about-grid { grid-template-columns: 1fr; }
       .services-grid { grid-template-columns: 1fr; }
       .doctors-grid { grid-template-columns: 1fr; }
@@ -1248,23 +1249,57 @@
 
     @media (max-width: 480px) {
       section { padding: 60px 4%; overflow-x: hidden; }
+      .nav-links
+      {
+        border: 2px solid red;
+        /* gap: 0; */
+      }
+
+      /* hero should expand vertically instead of clipping */
+      #hero {
+        min-height: auto;
+        align-items: flex-start;
+        padding-top: 60px;
+        overflow: visible;
+      }
+       .hero-stat
+       {
+         /* border: 2px solid red; */
+         width: 42%;
+         align-items: start;
+         display: flex;
+         flex-direction: column;
+         
+       }
       .hero-content { padding: 100px 4% 60px; }
       .hero-h1 { font-size: 2rem; }
-      .hero-stat-num { font-size: 1.8rem; }
+      .hero-stat-num { font-size: 2.8rem; }
       .counter-grid { grid-template-columns: 1fr; }
-      .doctor-card
-      {
+      .doctor-card {
         display: flex;
         flex-direction: column;
       }
-      .doctor-image-area
-      {
+      .doctor-image-area {
         width: 100%;
         height: auto;
       }
       .about-accent-card{
         background-color: aliceblue;
       }
+      .faq-item
+      {
+        
+        width: 90%;
+      }
+      .faq-visual
+      {
+        /* border: 2px solid red; */
+        margin-left: -13px;
+        width: 95%;
+      }
+      .faq-grid { padding-right: 30px; }
+
+      /* hide decorative elements on very small screens */
       .emergency-banner::before { display: none; }
       .testimonials-track-wrapper::before,
       .testimonials-track-wrapper::after { display: none; }
