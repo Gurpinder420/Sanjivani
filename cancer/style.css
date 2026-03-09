@@ -72,7 +72,9 @@
     .nav-logo img
     {
        height: 9vh;
-       width: 120px;
+       width: 140px;
+    border-radius: 25px;
+    /* padding-top: 10px; */
 
     }
    
@@ -1251,8 +1253,7 @@
       section { padding: 60px 4%; overflow-x: hidden; }
       .nav-links
       {
-        border: 2px solid red;
-        /* gap: 0; */
+        /* display: none; */
       }
 
       /* hero should expand vertically instead of clipping */
