@@ -1319,8 +1319,15 @@
         
         width: 98%;
         margin-left: -17px;
-        padding: 20px;
+       
+       
 
+      }
+      .faq-item
+      {
+          /* border: 2px solid red; */
+          width: 90%;
+          margin-left: 5%;
       }
       .faq-visual
       {
