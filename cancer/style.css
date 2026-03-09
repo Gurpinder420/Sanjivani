@@ -1325,9 +1325,10 @@
       }
       .faq-item
       {
-          /* border: 2px solid red; */
+         
           width: 90%;
-          margin-left: 5%;
+          margin-left: 1%;
+          
       }
       .faq-visual
       {
