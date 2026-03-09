@@ -1299,6 +1299,13 @@
         display: flex;
         flex-direction: column;
       }
+      .trust-bar-inner
+      {
+       
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      }
       .doctor-image-area {
         width: 100%;
         height: auto;
@@ -1312,7 +1319,8 @@
         
         width: 98%;
         margin-left: -17px;
-        padding: 20px;
+        padding-left: auto;
+        padding-right: auto;
 
       }
       .faq-visual
