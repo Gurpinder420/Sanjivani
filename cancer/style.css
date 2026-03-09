@@ -1262,7 +1262,7 @@
       .counter-divider { display: none; }
       .trust-bar-inner { justify-content: center; }
     }
-    @media (max-width: 480px) {
+    @media (max-width: 495px) {
       section { padding: 60px 4%; overflow-x: hidden; }
      
      
